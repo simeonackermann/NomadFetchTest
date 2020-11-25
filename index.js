@@ -14,6 +14,7 @@ function fetchNomad() {
     .then(data => {
     console.log('data', data);
     jsonEditor.setValue(JSON.stringify(data, null, '\t'));
+    jsonEditor.clearSelection();
   })
     .catch(error => {
     console.log('error', error);
