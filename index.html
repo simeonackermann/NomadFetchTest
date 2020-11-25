@@ -3,12 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style type="text/css" media="screen">
+    body {
+      padding: 10px;
+    }
+    .editor {
+        position: relative;
+        min-height: 300px;
+        border: 1px solid lightgray;
+    }
+</style>
 </head>
 <body>
   
   <button id="btn">Load...</button>
   
+  <div id="json-editor" class="editor"></div>
+  
 </body>
-
-<script src="index.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
 </html>
